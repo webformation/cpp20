@@ -52,7 +52,7 @@ struct Generator {
 
         // called by compiler for coroutine without return
          suspend_never return_void() noexcept(true)  {
-             return {};
+             return;
         } 
 
         // called by compiler last thing to await final result
