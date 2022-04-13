@@ -1,7 +1,8 @@
 module;
-constexpr int version_interne = 1;
+int version_interne = 1;
 
 export module societe;
+
 import <iostream>;
 export import personne;
 
@@ -16,7 +17,7 @@ export struct Societe
 
 };
 
-constexpr int version = 2;
+export constexpr int version = 2;
 
 Societe::Societe(const string nom, Personne directeur) : directeur(directeur)
 {
